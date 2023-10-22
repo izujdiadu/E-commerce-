@@ -1,0 +1,991 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    scrollbar-width: none;
+
+   
+}
+
+.prodcarousel::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:rgb(180,180,180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+#navbar {
+    z-index: 999;
+    position: -webkit-sticky;
+    top: 0;
+}
+#navbar .navclass {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 0px;
+}
+
+#navbar .navclass .navli {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    align-items: center;
+}
+
+
+#navbar .navclass .navli li {
+    list-style: none;
+    margin-right: 150px;
+    color: white;
+    width: 100%;
+}
+
+#navbar .navclass .navli  li:hover {
+    color: rgb(245, 180, 45);
+}
+
+#navbar .navclass img {
+    width: 30px;
+}
+
+/* end of navbar */
+#dropdown {
+    padding: 0px;
+    z-index: 998;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    left: -100%;
+    transition: 0.5s;
+    position: fixed;
+
+}
+
+#dropdown .droptab  {
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    padding: 20px;
+    margin:0;
+}
+
+#dropdown .dropdiv {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    
+}
+
+#dropdown .dropdiv li {
+    color:white;
+    font-size: 26px;
+    margin-left: 120px;
+}
+
+#dropdown .dropdiv li:hover {
+    color:rgb(245, 180, 45);
+}
+
+#dropdown2 {
+    padding: 0px;
+    z-index: 998;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    left: -100%;
+    transition: 0.5s;
+    position: absolute;
+}
+
+#dropdown2 .droptab  {
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    padding: 20px;
+    margin:0;
+}
+
+#dropdown2 .dropdiv {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    
+}
+
+#dropdown2 .dropdiv li {
+    color:white;
+    font-size: 26px;
+    margin-left: 120px;
+}
+
+#dropdown2 .dropdiv li:hover {
+    color:rgb(245, 180, 45);
+}
+
+
+
+
+
+
+
+/*end of dropdown */
+#background {
+    padding: 0px;
+    margin: 0px;
+}
+#background .fullbackground {
+    position:relative;
+
+}
+#background .backpic img {
+    width: 100%;
+}
+
+#background .publicite {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 38%;
+}
+
+#background .h1absolute {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#background .h1absolute h1 {
+    font-size: 48px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+#background .h1absolute p {
+    font-size: 28px;
+}
+
+#background .savoirplus {
+    display: flex;
+}
+#background .savoirplus p {
+    margin-right: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #2997ff;
+    padding:10px;
+    margin-top: 0px;
+    border-radius: 4px;
+}
+
+#background .savoirplus p:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#background .savoirplus p:active {
+    filter: brightness(120%);
+}
+/* end of background */
+
+#randpublicite {
+    padding: 0px;
+    margin: 0px;
+}
+
+#randpublicite .randtab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+
+.savoirplus {
+    display: flex;
+}
+
+.randname {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0; 
+    margin: 0;
+}
+
+.randname h1 {
+    font-size: 48px;
+    margin-bottom: 0;
+    color: rgb(30,30,30);
+}
+
+.randname p {
+    font-size: 24px;
+    color: rgb(30,30,30);
+}
+
+.randname .savoirplus p {
+    font-size: 18px;
+    color: white;
+    margin-top: 0px;
+    background-color: #2997ff;
+    padding:10px;
+    margin-top: 0px;
+    border-radius: 4px;
+}
+
+.randname .savoirplus p:hover {
+    text-decoration: underline;
+    background-color: #2997ff;
+    padding:10px;
+    margin-top: 0px;
+    border-radius: 4px;
+    color: white;
+}
+
+.savoirplus p:active {
+    filter: brightness(120%);
+}
+
+#randpublicite .randpic img {
+    width: 100%;
+    height: 450px;
+    filter: brightness(120%);
+}
+
+/* end of randpublicite */
+
+#randpubliciteflex {
+    padding: 0;
+    margin: 0;
+}
+#randpubliciteflex .randpubflextab {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#randpubliciteflex .randpubflexinfo {
+    width: 50%;
+}
+
+#randpubliciteflex .randpubflexprod img {
+    width: 100%;
+    height: 400px;
+    filter: brightness(105%);
+}
+/*end of randpubliciteflex */
+#listprod {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#listprod .listtab {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#listprod .listname {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+#listprod .listname h1 {
+    font-size: 48px;
+    line-height: 0ch;
+}
+#listprod .listname img {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+#listprod .listdesc p {
+    font-size: 24px;
+}
+
+#listprod .savoirplus {
+    display: flex;
+}
+
+#listprod .savoirplus p {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #2997ff;
+    margin-top: 0px;
+}
+
+#listipad .savoirplus p:hover {
+    text-decoration: underline;
+    color: #2997ff;
+}
+
+#listprod .listpic img {
+    width: 100%;
+    filter: brightness(120%);
+    height: 600px;
+
+}
+
+.rotateipad {
+    transform:rotate(90deg);
+    justify-content:start;
+}
+
+/*end listprod*/
+
+#footer {
+    background-color: rgb(243,243,243);
+    padding: 20px;
+    color:rgba(90,90,90, 0.7);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 100;
+    box-shadow: 10px 20px 30px rgba(0,0,0,0.1);
+    flex-wrap:wrap;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+
+/* end of foot*/
+#produits .prodback img {
+    width: 600;
+    height: 500;
+}
+/* CONNECT PAGE*/
+
+
+
+#bgconn .bgconntab img {
+    height: 800px;
+    position: absolute;
+    top: 0;
+}
+
+/*end of BG*/
+
+#formconn .formconntab {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    position: relative;
+    margin-top: 120px;
+}
+
+#formconn .phpverif {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+#formconn .phpverif h1 {
+    line-height: 0ch;
+}
+#formconn .formconntab h1 {
+    font-size: 38px;
+    font-weight: 400;
+}
+
+#formconn .formconninput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formconn .formconntab input {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 260px;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0ch;
+    border-bottom-right-radius: 0ch;
+    font-weight: 100;
+
+}
+
+#formconn .formconntab input:nth-child(2){
+    border-top-left-radius: 0ch;
+    border-top-right-radius: 0ch;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#formconn .formconntab {
+    display: flex;
+    justify-content: center;
+}
+#formconn .formconntab p {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #2997ff;
+    margin-top: 60px;
+
+}
+
+#formconn .formconntab p:hover {
+    text-decoration: underline;
+    color: #2997ff;
+}
+#formconn .button {
+    display: flex;
+    justify-content: center;
+}
+#formconn #buttonstyle {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    color: #2997ff;
+    cursor: pointer;
+}
+
+/* end of formconn */
+#produits .prodback {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#produits .prodback img {
+    width: 800px;
+    position: relative;
+    margin-top: 250px;
+    margin-bottom: 80px;
+    border-radius: 40px;
+}
+#produits .prodtext {
+    position: absolute;
+    top: 5%;
+    margin:auto;
+    text-align: center;
+    align-items: center;
+}
+
+#produits .prodtext h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    line-height: 0ch;
+}
+
+#produits .prodtext p {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#produits .savoirplus {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#produits .savoirplus a {
+    margin-right: 12px;
+    text-align: center;
+    background-color: #2997ff;
+    border-radius: 28px;
+    color:white;
+    width: 120px;
+    font-size: 16px;
+    padding: 6px;
+    text-align: center;
+}
+
+
+
+/* end of produits*/
+
+#proddetail {
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+#proddetail .proddesc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#proddetail .prodname h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+#proddetail .prodname p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#proddetail .prodcarousel {
+    display: flex;
+    overflow: scroll;
+    width: 800px;
+    height: 360px;
+    margin: auto;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.03);
+    border-radius: 8px;
+}
+
+
+
+
+#proddetail .prodcarousel img {
+    width: 60%;
+    width: 800px;
+    height: 360px;
+    filter: brightness(105%);
+}
+
+#proddetail .prodcara {
+    display: flex;
+    flex-direction: column;
+}
+
+#proddetail .prodcara h1 {
+    font-weight: 400;
+}
+
+#proddetail .prodtab button {
+    background-color:#0071e3;
+    color:white;
+    border: 0ch;
+    border-radius: 18px;
+    font-size: 18px;
+    padding: 12px;
+    margin-right: 18px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+#proddetail .prodtab button:hover {
+    cursor:pointer;
+}
+
+.couleurtab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.couleur {
+    display: flex;
+    flex-direction: row;
+}
+
+.couleur img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+#couleurid {
+    border: 4px solid rgb(0, 0, 0);
+}
+.stockagetab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.stockagetab .stockage {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 4px;
+    width: 260px;
+}
+
+#stockageid {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-color: black;
+}
+
+
+/*end of prod detail*/
+#account {
+    padding-bottom: 500px;
+    margin-top: 70px;
+}
+#account .accounttab {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#account .accountphrase {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0ch;
+}
+
+#account .accountphrase h1 {
+    font-size: 38px;
+}
+
+#account .accountphrase p {
+    font-size: 18px;
+}
+
+#account .accountphrase a {
+    color: #0071e3;
+}
+
+#account .accountphrase a:hover {
+    text-decoration: underline;
+}
+
+#account input {
+    border-color: rgba(0, 0,0,0.06);
+    width: 220px;
+    right: 40px;
+    height: 60px;
+    border-radius: 4px;
+    border-width: 1px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#account .input h1 {
+    display: none;
+}
+
+#account .nameinput {
+    display: flex;
+    flex-direction: row;
+}
+
+#account .nameinput h1 {
+    font-weight: 300;
+}
+
+
+#account .nameinput input:nth-child(1){
+    margin-right: 70px;
+}
+
+#account .input {
+    width: 35%;
+    margin-top: 20px;
+}
+
+#account .pwdconfirm {
+    display: flex;
+    flex-direction: row;
+}
+
+#account .pwdconfirm input:nth-child(1){
+    margin-right: 70px;
+}
+
+#account .pwdid input{
+    width: 100%;
+}
+#account .pwdid p {
+    color: rgb(100,100,100);
+}
+#account .countryinput {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+
+#account .countryinput h1 {
+    font-weight: 300;
+
+}
+
+#account .phonenum input {
+    width: 100%;
+}
+
+#account .input select {
+    border-color: rgba(0, 0,0,0.06);
+    right: 40px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: rgb(150,150,150);
+    width: 100%;
+    margin-bottom: 20px;
+    border-width: 1px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#account .countryinput input {
+    width: 100%;
+}
+
+#account .accounttab button {
+    width: 80px;
+    height: 40px;
+    background-color: #0071e3;
+    border-color: rgba(0, 0,0,0.06);
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* end of account */
+
+#verif .veriftab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#verif .veriftab h1 {
+    font-size: 40px;
+    line-height: 0%;
+    margin-bottom: 70px;
+    font-weight: 300;
+}
+
+#verif .veriftab h2 {
+    font-size: 32px;
+    line-height: 0%;
+    font-weight: 400;
+
+}
+
+#verif .veriftab p {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+/* end of verif */
+
+
+#user {
+
+
+}
+#user .usertab {
+    
+}
+
+#user .pagetab {
+    background-color: rgb(243, 243, 243);
+}
+
+#user .comptetab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+}
+#user .comptetab a {
+    color: #0071e3;
+}
+
+#user .comptetab a:hover {
+    text-decoration: underline;
+
+}
+#user .comptetab h1 {
+    font-weight: 400;
+}
+
+#user .hellotab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+}
+
+#user .hellotab h1 {
+    font-size: 24px;
+    margin-left: 300px;
+}
+
+
+#user .soldetab {
+    margin-left: 300px;
+    padding-right: 300px;
+}
+
+#user .soldetab a:hover {
+    text-decoration: underline;
+}
+
+#user .soldetab a {
+    color: #0071e3;
+}
+
+#user .soldetab h1 {
+    font-size: 30px;
+}
+
+#user .soldetab p {
+    font-size: 18px;
+}
+
+#user .userinfo {
+    margin-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#user .userinfo h1 {
+    font-size: 30px;
+}
+
+#user .userinfo p {
+    font-size: 18px;
+}
+
+#user .pmain {
+    font-weight: 600;
+}
+
+#user .userinfoflex {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#user .userinfoflex img {
+    width: 300px;
+    margin-top: 30px;
+}
+
+/*end of user*/
+
+#interieur .montanttab {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+
+}
+
+#interieur .montanttab h1 {
+    font-size: 37px;
+}
+
+#interieur .montanttab button {
+    background-color: #0071e3;
+    width: 280px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    color:white;
+    border: 1px solid white;
+    margin-bottom: 30px;
+}
+
+#interieur .panierprodflex {
+    margin-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#interieur .panierprodflex img {
+    width: 300px;
+}
+
+#interieur .panierprodphone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#interieur .panierprodtext {
+    margin-left: 40px;
+
+}
+
+#interieur .panierprodtext a {
+    color: #0071e3;
+}
+
+#interieur .valider button {
+    background-color: #0071e3;
+    width: 280px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    color:white;
+    border: 1px solid white;
+    margin:auto;
+
+}
+
+#interieur .valider h1 {
+    font-size: 40px;
+}
+
+
+
